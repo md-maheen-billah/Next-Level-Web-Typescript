@@ -12,7 +12,7 @@ const user = {
     address: 'Uganda'
 }
 
-const {contactNo, name:{middleName:midName}} = user; // here midName is an alias for middleName. Can't use type while destructuring object here
+const {contactNo, name:{middleName:midName}} = user; // here midName is a name alias for middleName. Can't use type while destructuring object here
 
 // array
 const myFriends: string[]=['John','Don','Ron','Gon','Son']
