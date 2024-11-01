@@ -1,27 +1,30 @@
 {//////////////////////////////////////////////
-// string
-let firstName : string  = 'maheen'
+// type assertion
+let anything:any;
+anything="Next";
+anything = 222;
+(anything as number)
 
-// number
-let roll : number = 123
+const kgToGm = (value: string| number): string|number|undefined => {
+    if(typeof value ==='string'){
+        const converted = parseFloat(value)*1000;
+        return `The converted value is ${converted}`
+    }
+    if(typeof value ==='number'){
+        return value*1000;
+    }
+}
 
-// boolean
-let isAdmin : boolean = true
+const result1 = kgToGm(20) as number
+const result2 = kgToGm("20") as string
 
-// undefined
-let x:undefined=undefined
+type CustomError = {
+    message: string
+}
+try{
 
-// null
-let y:null=null
+}catch(error){
+    console.log((error as CustomError).message);
+}
 
-//taking a variable without assigning any value
-let d:number;
-d=5
-
-// array
-let friends: string[] = ['rachel','monica']
-
-// tuple
-let coordinates: [number,number, boolean]= [1,5,true]
-let ageName: [number,string]= [40,'John']
 }//////////////////////////////////////////////
