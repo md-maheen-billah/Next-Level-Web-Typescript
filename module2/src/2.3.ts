@@ -20,7 +20,7 @@ const user:GenericArray<{name:string,age:number}> = [
     },
     {
         name: 'John',
-        age: 29
+        age: 30
     }
 ]
 // generic tuple
