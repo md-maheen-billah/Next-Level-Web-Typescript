@@ -23,6 +23,40 @@ const user:GenericArray<{name:string,age:number}> = [
         age: 30
     }
 ]
+
+type User = {
+    name: string;
+    age: number
+}
+
+// generic object using type
+const user2:GenericArray<User> = [
+    {
+        name: 'Maheen',
+        age: 27,
+    },
+    {
+        name: 'John',
+        age: 30
+    }
+]
+
+interface User1 {
+    name: string;
+    age: number
+}
+
+// generic object using interface
+const user1:GenericArray<User1> = [
+    {
+        name: 'Maheen',
+        age: 27,
+    },
+    {
+        name: 'John',
+        age: 30
+    }
+]
 // generic tuple
 type GenericTuple<X,Y>=[X,Y]
 const manush: GenericTuple<string,string> = ['Mr.X','Mr.Y']
