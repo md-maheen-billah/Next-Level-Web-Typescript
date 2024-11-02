@@ -1,2 +1,2 @@
-# Next-Level-Module1
+# Next-Level-Module
 Explore Basic Types of Typescript
