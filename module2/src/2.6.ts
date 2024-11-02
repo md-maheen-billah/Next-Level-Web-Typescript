@@ -7,7 +7,7 @@ interface Student {
     email: string;
 }
 const addCourseToStudent = <T extends Student>(student:T)=>{
-    const course = 'Next Level Web Development'
+    const course = 'Nxt Level Web Development'
     return {
         ...student,
         course
