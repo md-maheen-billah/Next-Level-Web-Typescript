@@ -13,7 +13,7 @@ const boolArray: GenericArray<boolean>=[true,false,true]
 
 
 // generic object
-const user:GenericArray<{name:string,age:number}> = [
+const user:GenericArray<{name:string;age:number}> = [
     {
         name: 'Maheen',
         age: 27,
@@ -60,5 +60,5 @@ const user1:GenericArray<User1> = [
 // generic tuple
 type GenericTuple<X,Y>=[X,Y]
 const manush: GenericTuple<string,string> = ['Mr.X','Mr.Y']
-const userWithId: GenericTuple<number,{name:string,email:string}> = [1234,{name:'Monu',email:'xyz@gmail.com'}]
+const userWithId: GenericTuple<number,{name:string;email:string}> = [1234,{name:'Monu',email:'xyz@gmail.com'}]
 }//////////////////////////////////////////////
