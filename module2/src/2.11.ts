@@ -7,6 +7,7 @@ type Person = {
     email?:string;
     contactNo: string;
     gender: string;
+    role: string;
 }
 
 type NameAge = Pick<Person,"name"|"age">
